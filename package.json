@@ -1,0 +1,25 @@
+{
+  "name": "rethinkdb_adapter",
+  "version": "0.1.0",
+  "description": "Adapter/connector for RethinkDB with simple query/persistence interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rethinkdb",
+    "database",
+    "adapter"
+  ],
+  "author": "Bill Heaton <pixelhandler@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "debug": "^1.0.4",
+    "inflect": "~0.3.0",
+    "node-uuid": "^1.4.1",
+    "rethinkdb": "~1.13.0-3"
+  }
+}
