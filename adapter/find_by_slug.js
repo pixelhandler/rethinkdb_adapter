@@ -70,9 +70,9 @@ function transform(payload) {
 }
 
 function transformDate(payload) {
-  if (!payload || !payload.date) return;
+  if (!payload || !payload.date) return payload;
   if (payload.date) {
-    if (typeof payload.date.toISOString == 'function') {
+    if (typeof payload.date.toISOString === 'function') {
       payload.date = payload.date.toISOString();
     }
   }
