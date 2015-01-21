@@ -68,15 +68,13 @@ module.exports = function(adapter, connect) {
     var settings = { primaryKey: adapter.tables[tableName] };
     var db = _adapter.db;
 
-    r.db(db).tableCreate(tableName, settings).run(connection, createDbTableCallback);
-  }
-
-  function createDbTableCallback(err, result) {
-    if (err) {
-      createTableError(err);
-    } else {
-      createTableSuccess(tableName);
-    }
+    r.db(db).tableCreate(tableName, settings).run(connection, function (err, result) {
+      if (err) {
+        createTableError(err);
+      } else {
+        createTableSuccess(tableName);
+      }
+    });
   }
 
   /**
