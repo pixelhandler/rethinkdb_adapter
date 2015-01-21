@@ -1,6 +1,6 @@
 {
   "name": "rethinkdb_adapter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Adapter/connector for RethinkDB with simple query/persistence interface",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,10 @@
   "license": "ISC",
   "engines": {
     "node": ">= 0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixelhandler/rethinkdb_adapter"
   },
   "dependencies": {
     "debug": "^1.0.4",
