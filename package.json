@@ -1,6 +1,6 @@
 {
   "name": "rethinkdb_adapter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Adapter/connector for RethinkDB with simple query/persistence interface",
   "main": "index.js",
   "scripts": {
